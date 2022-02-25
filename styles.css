@@ -9,15 +9,14 @@ body {
     background-color: slategrey;
 }
 
+.left {
+    display: flex;
+}
 .form-header {
     
 }
 
-.container {
-    
-}
-
-.container-image {
+.left-image {
     height: 100vh;
     width: 40vw;
     object-fit: none;
