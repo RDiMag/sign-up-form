@@ -6,14 +6,24 @@
 
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: slategrey;
 }
 
+@font-face {
+    font-family: 'sears_towerregular';
+    src: url('fonts/sears_tower-webfont.woff2') format('woff2'),
+         url('fonts/sears_tower-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 .container {
     display: flex;
 }
+
 .form-header {
-    
+    margin: 25px;
+    font-size: small;
+    font-family: 'sears_towerregular';
 }
 
 .left-image {
@@ -23,10 +33,19 @@ body {
     position: relative;
 }
 
+.logo {
+    border-style: solid;
+    border-color: mediumblue;
+}
+
 .overlay {
     position: absolute;
     font-size: 15px;
     left: 45px;
     color: rgb(240, 240, 240);
     bottom: 0px;
+}
+
+.right-side {
+    background-color: rgba(237, 243, 211, 0.918);
 }
