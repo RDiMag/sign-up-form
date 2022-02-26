@@ -9,7 +9,7 @@ body {
     background-color: slategrey;
 }
 
-.left {
+.container {
     display: flex;
 }
 .form-header {
@@ -20,4 +20,13 @@ body {
     height: 100vh;
     width: 40vw;
     object-fit: none;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    font-size: 15px;
+    left: 45px;
+    color: rgb(240, 240, 240);
+    bottom: 0px;
 }
