@@ -12,16 +12,16 @@
     <!-- Left side -->
 
     <div class="container">
-        <div class="left-image" alt="Rustic wooden planks create a walkway in a meadow.">
+        <div class="left-image" alt="A cluster of dark green ferns, spotted with rain.">
             <div class="logo-area">
                 
                 <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png"
-                    alt="The Destination Haunted logo, a stylized house with red and black keys.">
+                    alt="A stylized drawing of a viking with an eye patch.">
                  <h2>Destination: Haunted</h2>  
                 
  
             </div>
-            <p class="credit">Photo by Austin Edwards on Unsplash</p>
+            <p class="credit">Photo by Hailie West on Unsplash</p>
         </div>
         
 <!-- Right side -->
@@ -34,12 +34,51 @@
 
             <!-- Form -->
 
-            <form>
+            <form action="#">
+                <div class="form-block">
+                    <p id="action-text">Houses with <em>spirit!</em> Contact us today.</p>
 
+                    <fieldset>
+                        <div class="cell">
+                            <label for="first-name">First Name:</label>
+                            <input type="text" name="first-name" id="first-name">
+                        </div>
+                        <div class="cell">
+                            <label for="last-name">Last Name:</label>
+                            <input type="text" name="last-name" id="last-name">
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <div class="cell">
+                            <label for="email">Email:</label>
+                            <input type="text" name="email" id="email">
+                        </div>
+                        <div class="cell">
+                            <label for="phone-number">Phone Number:</label>
+                            <input type="text" name="phone-number" id="phone-number">
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <div class="cell">
+                            <label for="password">Password:</label>
+                            <input type="text" name="password" id="password">
+                        </div>
+                        <div class="cell">
+                            <label for="confirm-password">Confirm Password:</label>
+                            <input type="text" name="confirm-password" id="confirm-password">
+                        </div>
+                        
+                    </fieldset>
+
+                </div>
             </form>
             <button id="create">Create Account</button>
-            <div id="login">Log in.</div>
+            <div id="login">Already have an account? Log In</div>
         </div>
+
+
     </div>
    
     
