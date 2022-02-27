@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     height: 100vh;
@@ -43,6 +44,9 @@ body {
     color: rgb(240, 240, 240);
     bottom: 0px;
     width: 35%;
+    display: flex;
+    justify-content: space-around;
+    
 }
 
 .logo-area {
@@ -61,8 +65,13 @@ body {
     max-height: 90%;
 }
 
+/* box shadow and gradient properties soften edges between left and right background images */
+
 .right-side-container {
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     flex: 1;
     background-image: linear-gradient(to right, rgba(76, 99, 56, 0.855), rgba(5, 95, 42, 0.253));
     box-shadow: inset 1px 2px 3px rgba(0, 0, 0, .5);
@@ -79,18 +88,20 @@ body {
     margin: 25px;
     padding: 8px;
     border-radius: 15px;
+    height: 300px;
 }
 
 fieldset {
     border-style: solid;
     border-color: cornflowerblue;
     margin: 4px;
+    margin-top: 15px;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: space-between;
     flex: 0 1 auto;
     gap: 10px 20px;
 }
-
 
 #action-text {
     font-family: 'Lucida Sans';
@@ -98,16 +109,42 @@ fieldset {
     margin-bottom: 2px;
 }
 
-#login, #create {
+#login {
     border-style: solid;
     border-color: cornflowerblue;
-    margin: 8px;
     margin-left: 25px;
 }
 
 .cell {
     margin: 4px;
 }
+
+input {
+    border: 1px solid rgba(202, 207, 205, 0.995);
+    border-radius: 4px;
+    font-size: 16px;
+    font-size: max(16px, 1em);
+    font-family: inherit;
+    padding: 0.25em 0.5em;
+    background-color: rgba(255, 255, 255, 0.952);
+    
+}
+
+textarea.input {
+    resize: vertical;
+  }
+
+button {
+        border-radius: 4px;
+        font-size: 16px;
+        font-size: max(16px, 1em);
+        font-family: inherit;
+        padding: 0.25em 0.5em;
+        background-color: rgba(255, 255, 255, 0.952);;
+        margin-left: 25px;
+        border-color: darkolivegreen;
+        max-width: 175px;
+    }
 
 #login {
     font-family: 'Lucida Sans';
