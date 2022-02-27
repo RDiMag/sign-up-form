@@ -87,6 +87,10 @@ fieldset {
     border-style: solid;
     border-color: cornflowerblue;
     margin: 4px;
+    display: flex;
+    justify-content: space-evenly;
+    flex: 0 1 auto;
+    gap: 10px 20px;
 }
 
 
@@ -100,6 +104,10 @@ fieldset {
     border-style: solid;
     border-color: cornflowerblue;
     margin: 8px;
+}
+
+.cell {
+    margin: 4px;
 }
 
 #login {
