@@ -74,26 +74,32 @@ body {
     font-family: 'sears_towerregular';
 }
 
-.form-block {
+.right-side-container .form-block {
     border-style: solid;
     border-color: cornflowerblue;
+    background-color: rgba(236, 245, 240, 0.795);
+    margin: 25px;
+    padding: 8px;
+    border-radius: 15px;
 }
 
-fieldset{
+fieldset {
     border-style: solid;
     border-color: cornflowerblue;
+    margin: 4px;
 }
 
 
 #action-text {
     font-family: 'Lucida Sans';
     font-size: 22px;
+    margin-bottom: 2px;
 }
 
 #login, #create, .form-header {
     border-style: solid;
     border-color: cornflowerblue;
-    margin: 3px;
+    margin: 8px;
 }
 
 #login {
