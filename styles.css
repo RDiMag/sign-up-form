@@ -97,6 +97,11 @@ body {
     height: 300px;
 }
 
+#action-text {
+    font-family: 'Lucida Sans';
+    font-size: 22px;
+}
+
 fieldset {
     border-style: solid;
     border-color: cornflowerblue;
@@ -107,18 +112,6 @@ fieldset {
     justify-content: space-between;
     flex: 0 1 auto;
     gap: 10px 20px;
-}
-
-#action-text {
-    font-family: 'Lucida Sans';
-    font-size: 22px;
-    margin-bottom: 2px;
-}
-
-#login {
-    border-style: solid;
-    border-color: cornflowerblue;
-    margin-left: 25px;
 }
 
 .cell {
@@ -137,12 +130,20 @@ input {
 }
 
 .input:focus {
-    
     border-color: hsl(var(--input-focus-h), var(--input-focus-s), var(--input-focus-l));
     box-shadow: 0 0 0 3px hsla(var(--input-focus-h), var(--input-focus-s), calc(var(--input-focus-l) +
     40%), 0.8);
     outline: 3px solid transparent;
+}
 
+.button-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 1;
+    border-style: solid;
+    border-color: cornflowerblue;
+    margin-left: 25px;
 }
 
 button {
@@ -152,13 +153,15 @@ button {
         font-family: inherit;
         padding: 0.25em 0.5em;
         background-color: rgba(255, 255, 255, 0.952);;
-        margin-left: 25px;
         border-color: darkolivegreen;
         max-width: 175px;
+        max-height: 60px;
+        align-items: center;
+        font-weight: bold;
     }
 
-#login {
+
+a {
+    color: #0f1613;
     font-family: 'Lucida Sans';
-    font-weight: bold;
-    font-size: 16px;
 }
