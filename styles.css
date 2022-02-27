@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+:root {
+    --input-border: #538a74;
+    --input-focus-h: 156;
+    --input-focus-s: 25%;
+    --input-focus-l: 43%;
+}
 
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -127,12 +133,17 @@ input {
     font-family: inherit;
     padding: 0.25em 0.5em;
     background-color: rgba(255, 255, 255, 0.952);
-    
+    transition: 180ms box-shadow ease-in-out;
 }
 
-textarea.input {
-    resize: vertical;
-  }
+.input:focus {
+    
+    border-color: hsl(var(--input-focus-h), var(--input-focus-s), var(--input-focus-l));
+    box-shadow: 0 0 0 3px hsla(var(--input-focus-h), var(--input-focus-s), calc(var(--input-focus-l) +
+    40%), 0.8);
+    outline: 3px solid transparent;
+
+}
 
 button {
         border-radius: 4px;
